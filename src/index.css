@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* public-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/public-sans-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/public-sans-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/public-sans-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/public-sans-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ibarra-real-nova-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/ibarra-real-nova-v27-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ibarra-real-nova-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/ibarra-real-nova-v27-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ibarra-real-nova-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/ibarra-real-nova-v27-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ibarra-real-nova-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/ibarra-real-nova-v27-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Public Sans", sans-serif;
+}
+img{
+  object-fit: cover;
+}
+.container{
+  width: 100%;
+  max-width: 1211px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+.block{
+  display: none;
+}
+.hidden-book{
+  display: none;
+}
+@media only screen and (max-width: 375.20px){
+  .container{
+    width: 100%;
+    max-width: 411px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-wrapper{
+    padding-top: 32px;
+    margin-bottom: 40px;
+  }
+  .item {
+    display: none;
+  }
+  .home-wrapper{
+    background-image: url('./img/png/media-bg.png');
+    background-size: 311px 230px;
+    padding-top: 229px;
+    margin-bottom: -90px;
+  }
+  .hey-text{
+    width: 311px;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+  }
+  .about{
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 115px;
+  }
+  .block{
+    display: block;
+    cursor: pointer;
+  }
+  .home-div{
+    width: 326px;
+  }
+
+  .man-img{
+    object-fit: contain;
+    margin-bottom: -82px;
+  }
+  .junior{
+    width: 311px;
+  }
+  .contact{
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .contact-text{
+    width: 311px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .hidden-hr{
+    display: none;
+  }
+  .footer{
+    text-align: center;
+    height: 354px;
+  }
+  .footer-container{
+    flex-direction: column;
+    gap: 40px;
+  }
+  .img-ul{
+    margin-top: 36px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .items-footer{
+    flex-direction: column;
+    gap: 32px;
+  }
+  /* Portfolio */
+  .manage-img{
+    height: 100%;
+  }
+  .all-hr{
+    margin-bottom: 24px;
+  }
+  .all-text{
+    width: 311px;
+  }
+  .all-btn{
+    margin-bottom: 24px;
+  }
+  .all-wrapper{
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 72px;
+  }
+  .hidden-book{
+    display: block;
+  }
+  .super-hr{
+    margin-bottom: 24px;
+  }
+}
