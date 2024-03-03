@@ -12,10 +12,7 @@ function Navbar() {
       <div className="block drawer-end">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <label
-            htmlFor="my-drawer-4"
-            className="w-[24px]"
-          >
+          <label htmlFor="my-drawer-4" className="w-[24px]">
             <img className="block" src={burger} alt="" width={24} height={13} />
           </label>
         </div>
@@ -25,26 +22,26 @@ function Navbar() {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu p-4 w-80 bg-base-200  min-h-full flex item gap-[42px]  text-base-content">
-        <NavLink
-          to={"/"}
-          className={({ isActive }) => (isActive ? "text-links-green" : "")}
-        >
-          HOME
-        </NavLink>
-        <NavLink
-          to={"portfolio"}
-          className={({ isActive }) => (isActive ? "text-links-green" : "")}
-        >
-          PORTFOLIO
-        </NavLink>
-        <NavLink
-          to={"contact"}
-          className={({ isActive }) => (isActive ? "text-links-green" : "")}
-        >
-          CONTACT ME
-        </NavLink>
-      </ul>
+          <ul className="flex tracking-[2px] text-center  mt-[88px] bg-grayish gap-[22px] menu pt-[40px] w-[223px] min-h-[186px] text-white">
+            <NavLink
+              to={"/"}
+              className={({ isActive }) => (isActive ? "text-links-green" : "")}
+            >
+              HOME
+            </NavLink>
+            <NavLink
+              to={"portfolio"}
+              className={({ isActive }) => (isActive ? "text-links-green" : "")}
+            >
+              PORTFOLIO
+            </NavLink>
+            <NavLink
+              to={"contact"}
+              className={({ isActive }) => (isActive ? "text-links-green" : "")}
+            >
+              CONTACT ME
+            </NavLink>
+          </ul>
         </div>
       </div>
       <ul className="flex item gap-[42px] text-grayish">

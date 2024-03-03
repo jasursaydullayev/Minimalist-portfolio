@@ -12,7 +12,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'first-page-nav-bg': "url('./src/img/png/first-page-nav-bg.png')"
+        'first-page-nav-bg': "url('./src/img/png/first-page-nav-bg.png')",
+
       },
       colors: {
         'links-green': '#5FB4A2',
